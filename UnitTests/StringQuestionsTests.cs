@@ -30,5 +30,18 @@ namespace UnitTestProject1
             // Assert
             Assert.AreEqual(2, result);
         }
+
+
+        [TestMethod]
+        public void FirstUniqueChar_abcdabbdddd_Should_Return_2()
+        {
+            // Arrange
+
+            // Act
+            var result = StringQuestions.FirstUniqueChar("abcdabbdddd");
+
+            // Assert
+            Assert.AreEqual(2, result);
+        }
     }
 }
